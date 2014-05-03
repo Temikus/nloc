@@ -7,5 +7,8 @@ Usage:
 Script supports autocompletion of known network locations.
 
 NOTE: Due to changes in security policy on OS X 10.8, system _will_ ask you for your password after executing the workflow.
+However, you can subvert the security protocol and avoid typing in the password every time by setting the suid bit on /usr/sbin/networksetup with:
+
+	sudo chmod u+s /usr/sbin/networksetup
 
 OS X 10.7 system shouldn't ask for your password since it doesn't require the `networksetup` command to be executed with super user privileges.
